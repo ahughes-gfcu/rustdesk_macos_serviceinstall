@@ -1,8 +1,8 @@
 #!/bin/bash
 
 agent_file=$(curl -s 'https://raw.githubusercontent.com/rustdesk/rustdesk/master/src/platform/privileges_scripts/agent.plist')
-daemon_file=$(curl -s 'https://raw.githubusercontent.com/rustdesk/rustdesk/master/src/platform/privileges_scripts/daemon.plist')
-osascript_body=$(curl - s 'https://raw.githubusercontent.com/rustdesk/rustdesk/master/src/platform/privileges_scripts/install.scpt')
+daemon_file=$(curl -s 'https://raw.githubusercontent.com/ahughes-gfcu/rustdesk_macos_serviceinstall/main/daemon.plist')
+osascript_body=$(curl -s 'https://raw.githubusercontent.com/rustdesk/rustdesk/master/src/platform/privileges_scripts/install.scpt')
 scriptname="RustDesk Service Installer"
 logandmetadir="/Library/IntuneScripts/rustdesk"
 log="$logandmetadir/rustdeskServiceInstaller.log"
