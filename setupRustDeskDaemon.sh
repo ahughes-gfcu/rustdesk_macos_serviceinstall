@@ -47,7 +47,7 @@ function install_as_service {
     echo "Loading LaunchDaemons"
     echo "------------------------------------"
     launchctl load -w $daemon_path && echo "Loaded $daemon_path"
-    #attempt to load the agent as well? This seems to fail but the rustdesk client tries this, line 202 in src/platform/macos.rs
+    #attempt to load the agent as well? This seems to fail but the rustdesk client tries this, line 202
     launchctl load -w $agent_path && echo "Loaded $agent_path"
 
     echo ""
